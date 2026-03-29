@@ -1,17 +1,38 @@
-export default function Result({ result }) {
+function Result({ result }) {
   return (
-<div
-  key={index}
-  style={{
-    background: "white",
-    margin: "20px auto",
+    <div style={styles.container}>
+      <div style={styles.card}>
+        <h2>Your Routine</h2>
+
+        {result.length === 0 ? (
+          <p>No routine generated</p>
+        ) : (
+          <ul>
+            {result.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    background: "#f8c8dc",
+  },
+  card: {
     padding: "20px",
-    borderRadius: "20px",
-    width: "90%",
-    maxWidth: "350px",
-    boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
-    transition: "0.3s"
-  }}
-  onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.05)"}
-  onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
-></div>
+    borderRadius: "10px",
+    background: "#fff",
+    textAlign: "center",
+    width: "300px",
+  },
+};
+
+export default Result;

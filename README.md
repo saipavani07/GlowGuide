@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# GlowGuide
+GlowGuide is a smart beauty assistant web application that provides personalized skincare and haircare routines based on user preferences such as gender, category, and occasion. It includes product recommendations, tutorial videos, a skin analyzer feature, and user authentication. Built using React with a modern responsive UI.
+>>>>>>> 49f75e18090bbc266cb0b2aa66fe177390a27125
